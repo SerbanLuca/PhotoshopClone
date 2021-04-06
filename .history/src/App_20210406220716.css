@@ -1,0 +1,17 @@
+*, *::after, *::before
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}

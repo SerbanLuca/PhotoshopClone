@@ -1,0 +1,28 @@
+*, *::after, *::before
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "imagesidebar" "slider sidebar";
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(162, 255, 162);
+}
+
+.main-image
+{
+  grid-area: image;
+  background-color: green;
+}

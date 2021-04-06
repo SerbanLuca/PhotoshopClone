@@ -1,0 +1,54 @@
+*, *::after, *::before
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+}
+
+.container
+{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "image sidebar" "slider sidebar";
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(162, 255, 162);
+}
+
+.main-image
+{
+  grid-area: image;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fminunileplanetei.com%2Feuropa%2Fmuntii-carpati%2F&psig=AOvVaw1qqs9xNWpFhz4x7GtHTpkZ&ust=1617823519602000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDZs7Os6u8CFQAAAAAdAAAAABAI";
+}
+
+.sidebar
+{
+  grid-area: sidebar;
+  background-color: purple;
+}
+
+.slider-container
+{
+  grid-area: slider;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.slider
+{
+  width: 100%;
+  cursor: pointer;
+}
+
+.title
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
